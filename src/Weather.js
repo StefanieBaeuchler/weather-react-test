@@ -73,19 +73,25 @@ export default function Weather(props) {
           </ul>
         </div>
         <div className="row">
-          <div className="col-6">
+          <div className="col-4">
             <div className="clearfix weather-temperature">
               <img
                 src={weatherData.imgUrl}
                 alt={weatherData.description}
                 className="float-left "
               />
-              <div className="float-left">
-                <WeatherTemperature celsius={weatherData.temperature} />
+            </div>
+          </div>
+          <div className="col-4">
+    
+                <div className="clearfix weather-temperature">
+                  <div className="float-left">
+                    <WeatherTemperature celsius={weatherData.temperature} />
+                 
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-4">
             <ul>
               <li>Humidity: {weatherData.humidity}%</li>
               <li>Wind: {Math.round(weatherData.wind)} km/h</li>

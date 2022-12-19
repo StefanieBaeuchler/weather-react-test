@@ -12,27 +12,21 @@ export default function ForecastDate(props) {
 
 
   return (
-    <div className="forecast mt-4">
-      <div className="row">
-        <div className="col">
-          <div className="forecast-day">
-            {day()}
-          </div>
-          <div>
-            {" "}
-            <img
-              src={`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${props.date.condition.icon}.png`}
-              alt=""
-            />
-          </div>
-          <span className="max-temp">
-            {Math.round(props.date.temperature.maximum)}°C
-          </span>
-          <span className="min-temp">
-            {Math.round(props.date.temperature.minimum)}°F
-          </span>
-        </div>
+    <div>
+      <div>{day()}</div>
+      <div>
+        {" "}
+        <img
+          src={`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${props.date.condition.icon}.png`}
+          alt="" width="70px"
+        />
       </div>
+      <span className="max-temp">
+        {Math.round(props.date.temperature.maximum)}°C
+      </span>
+      <span className="min-temp">
+        {Math.round(props.date.temperature.minimum)}°F
+      </span>
     </div>
   );
 }
