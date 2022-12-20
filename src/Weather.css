@@ -34,3 +34,8 @@
 .Weather .weather-temperature .active:hover {
   text-decoration: none;
 }
+
+.credits {
+  font-size: smaller;
+  margin-top: 10px;
+}

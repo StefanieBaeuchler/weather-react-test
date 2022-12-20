@@ -6,12 +6,11 @@ function App() {
   return (
     <div className="App">
       <Weather defaultCity="Vienna" />
-      <p>
-        Open source code by{" "}
+      <p className="credits">
         <a href="https://github.com/StefanieBaeuchler/weather-app-react">
-          {" "}
-          Stefanie Bäuchler
+          Open source code
         </a>
+        {""} by Stefanie Bäuchler
       </p>
     </div>
   );
